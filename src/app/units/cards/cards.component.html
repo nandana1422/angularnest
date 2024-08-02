@@ -1,0 +1,13 @@
+<div class="row">
+    @for(item of departments; track item.id) {
+        <div class="col">
+<div class="card" style="width: 18rem;">
+    <img src="{{item.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{item.title}}</h5>
+      <p class="card-text">{{item.description}}</p>
+      <a routerLink="{{item.link}}" class="btn btn-primary">more</a>
+    </div>
+  </div>
+</div>}
+</div>
